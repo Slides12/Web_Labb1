@@ -19,99 +19,219 @@
     
     https://onepagelove.com/peter-toth
     -->
-
-    <div class="container-fluid d-flex flex-column align-items-center text-center">
-        <header >
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">Hem</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./Pages/services.html">Produkter</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./Pages/about.html">Om Oss</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Annat
-                        </a>
-                        <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <div class="container-fluid d-flex flex-column align-items-center justify-content-center min-vh-100">
+        <header class="w-100">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary " aria-label="Huvudmeny">
+                <div class="container-fluid d-flex flex-column align-items-center">
+                    <a class="navbar-brand text-center border border-dark p-2" href="index.html">DJ's BAGERI</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+            
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav w-100 justify-content-center text-center">
+                            <li class="nav-item"><a class="nav-link active" href="./Pages/services.html">Produkter</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./Pages/about.html">Om Oss</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Annat</a>
+                                <ul class="dropdown-menu text-center">
+                                    <li><a class="dropdown-item" href="#">va</a></li>
+                                    <li><a class="dropdown-item" href="#">vaa</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">huh</a></li>
+                                </ul>
+                            </li>
                         </ul>
-                    </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
+                    </div>
                 </div>
             </nav>
+
+            <div class="container-fluid d-flex flex-column align-items-end justify-content-end ">
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" style="background-color: #3f3f3f; color: white;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                      </svg>
+                </button>
+
+                <div class="offcanvas offcanvas-end h-75 2-50" data-bs-scroll="true" tabindex="-2" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Din nuvarande kundvagn.</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul>
+                            <li>Är för tillfället tom.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
         </header>
-
-
-
-        <div>
-            <h1 class="p-80">DJ's BAGERI</h1>
-            <p>Välkommen till DJ's bageri där allt är bakom med omsorg och kärlek. Speciellt semlor.</p>
+    
+        <div class="text-center" aria-label="Välkomst text.">
+            <h1 class="p-4">DJ's BAGERI</h1>
+            <p>Välkommen till DJ's bageri där allt är bakat med kärlek och omsorg. Speciellt semlor.</p>
         </div>
-
-
-        <div class="container">
+    
+        <div class="container" aria-label="En bild karusell med bilder på bakverk.">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-10"> 
                     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active" data-bs-interval="3500">
-                                <img src="https://images.unsplash.com/photo-1582486983320-12feb082b528?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                                class="d-block w-100" alt="..." style="height: 600px; object-fit: cover;" loading="lazy">
+                                <img src="https://images.unsplash.com/photo-1582486983320-12feb082b528?q=80&w=2070&auto=format&fit=crop" 
+                                     class="d-block w-100" alt="En bild på två läckra semlor." style="height: 600px; object-fit: cover;" loading="lazy">
                             </div>
                             <div class="carousel-item" data-bs-interval="3500">
-                                <img src="https://images.unsplash.com/photo-1668015918583-e0dee8585f4e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                                class="d-block w-100" alt="..." style="height: 600px; object-fit: cover;" loading="lazy">
+                                <img src="https://images.unsplash.com/photo-1668015918583-e0dee8585f4e?q=80&w=1974&auto=format&fit=crop" 
+                                     class="d-block w-100" alt="En bild på kanelbullar med kraftig glasyr." style="height: 600px; object-fit: cover;" loading="lazy">
                             </div>
                             <div class="carousel-item" data-bs-interval="3500">
-                                <img src="https://images.unsplash.com/photo-1732565492107-d32577478885?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                                class="d-block w-100" alt="..." style="height: 600px; object-fit: cover;" loading="lazy">
+                                <img src="https://images.unsplash.com/photo-1732565492107-d32577478885?q=80&w=1974&auto=format&fit=crop" 
+                                     class="d-block w-100" alt="En bild på en nybakad bulle." style="height: 600px; object-fit: cover;" loading="lazy">
                             </div>
                             <div class="carousel-item" data-bs-interval="3500">
-                                <img src="https://images.unsplash.com/photo-1597673934455-f32e0fe3f529?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                                class="d-block w-100" alt="..." style="height: 600px; object-fit: cover;" loading="lazy">
+                                <img src="https://images.unsplash.com/photo-1597673934455-f32e0fe3f529?q=80&w=1965&auto=format&fit=crop" 
+                                     class="d-block w-100" alt="Massa bullar liggandes på en duk" style="height: 600px; object-fit: cover;" loading="lazy">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
+                            <span class="carousel-control-prev-icon"></span>
                         </button>
                         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
+                            <span class="carousel-control-next-icon"></span>
                         </button>
                     </div>
                 </div>
             </div>
         </div>
+    
+        <label style="border-bottom: 1px solid black; width: 100%; padding-top: 50px;"></label>
+        
 
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <h5>Recept blogg.</h5>
+                <div class="col-md-10">
+                    <div class="row g-0">
+                        <div class="col-md-4" style="padding: 4px;">
+                            <div class="card" style="width: 100%; border:none;">
+                                <a href="https://www.koket.se/cheesecake-i-glas-med-kolasas-och-blabar" style="text-decoration: none; color: inherit;"
+                                    onmouseover="this.style.textDecoration='underline'"
+                                    onmouseout="this.style.textDecoration='none'">
+                                    <img src="https://img.koket.se/standard-mega/cheesecake-i-glas-med-kolasas-och-blabar.png.webp"
+                                        class="card-img-top" alt="Cheesecake med kolasås och blåbär." style="margin-top: 40px;" loading="lazy">
+                                    <div class="card-body" style="padding-top: 40px;">
+                                        <p class="card-text" style="font-size: 16px; font-weight: 700;">Cheesecake i glas med kolasås och blåbär
+                                        </p>
+                                        <p class="card-text" style="font-size: 14px;">Lorem, ipsum dolor sit amet
+                                            consectetur adipisicing elit. Minima doloribus officiis qui!</p>
+                                        <p class="card-text"><small class="text-muted">Galet god!</small>
+                                        </p>
+                                        <hr>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-4" style="padding: 4px;">
+                            <div class="card" style="width: 100%; border:none;">
+                                <a href="https://www.koket.se/varm-choklad" style="text-decoration: none; color: inherit;"
+                                    onmouseover="this.style.textDecoration='underline'"
+                                    onmouseout="this.style.textDecoration='none'">
+                                    <img src="https://img.koket.se/standard-mega/varm-choklad.jpg.webp"
+                                        class="card-img-top" alt="Varm choklad kopp." style="margin-top: 40px;" loading="lazy">
+                                    <div class="card-body" style="padding-top: 40px;">
+                                        <p class="card-text" style="font-size: 16px; font-weight: 700;">Varm choklad
+                                        </p>
+                                        <p class="card-text" style="font-size: 14px;">Lorem, ipsum dolor sit amet
+                                            consectetur adipisicing elit. Minima doloribus officiis qui!</p>
+                                        <p class="card-text"><small class="text-muted">Lite varm choklad är aldrig fel.</small></p>
+                                        <hr>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-4" style="padding: 4px;">
+                            <div class="card" style="width: 100%; border:none;">
+                                <a href="https://www.koket.se/smarrig-semmelvaffla" style="text-decoration: none; color: inherit;"
+                                    onmouseover="this.style.textDecoration='underline'"
+                                    onmouseout="this.style.textDecoration='none'">
+                                    <img src="https://img.koket.se/standard-mega/smarrig-semmelvaffla-kungsornen-ny.png.webp"
+                                        class="card-img-top" alt="En våffla med semle grejer på." style="margin-top: 40px;" loading="lazy">
+                                    <div class="card-body" style="padding-top: 40px;">
+                                        <p class="card-text" style="font-size: 16px; font-weight: 700;">Smarrig semmelvåffla
+                                        </p>
+                                        <p class="card-text" style="font-size: 14px;">Lorem, ipsum dolor sit amet
+                                            consectetur adipisicing elit. Minima doloribus officiis qui!</p>
+                                        <p class="card-text"><small class="text-muted">Semlor är ju bland det bästa som finns.</small>
+                                        </p>
+                                        <hr>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
 
-        <footer class="bg-body-tertiary text-center text-lg-start">
-            <div class="text-center p-3" >
-              © 2025 Copyright:
-              <a class="text-body" href="index.html">DJ's Bageri</a>
+                        <div class="col-md-4" style="padding: 4px;">
+                            <div class="card" style="width: 100%; border:none;">
+                                <a href="https://www.koket.se/mitt-kok/roy-fares/roy-fares-semlor" style="text-decoration: none; color: inherit;"
+                                    onmouseover="this.style.textDecoration='underline'"
+                                    onmouseout="this.style.textDecoration='none'">
+                                    <img src="https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_246325/cf_259/klassiska_semlor.jpg"
+                                        class="card-img-top" alt="Semlor" style="margin-top: 40px;" loading="lazy">
+                                    <div class="card-body" style="padding-top: 40px;">
+                                        <p class="card-text" style="font-size: 16px; font-weight: 700;">Roy Fares semlor
+                                        </p>
+                                        <p class="card-text" style="font-size: 14px;">Lorem, ipsum dolor sit amet
+                                            consectetur adipisicing elit. Minima doloribus officiis qui!</p>
+                                        <p class="card-text"><small class="text-muted">Again, semlor är bäst.</small></p>
+                                        <hr>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-4" style="padding: 4px;">
+                            <div class="card" style="width: 100%; border:none;">
+                                <a href="https://www.koket.se/hela-sverige-bakar/kjell-eriksson/kolakakor" style="text-decoration: none; color: inherit;"
+                                    onmouseover="this.style.textDecoration='underline'"
+                                    onmouseout="this.style.textDecoration='none'">
+                                    <img src="https://img.koket.se/standard-mega/kolakakor.jpg.webp"
+                                        class="card-img-top" alt="Kolakakor" style="margin-top: 40px;" loading="lazy">
+                                    <div class="card-body" style="padding-top: 40px;">
+                                        <p class="card-text" style="font-size: 16px; font-weight: 700;">Klassiska kolakakor
+                                        </p>
+                                        <p class="card-text" style="font-size: 14px;">Lorem, ipsum dolor sit amet
+                                            consectetur adipisicing elit. Minima doloribus officiis qui!</p>
+                                        <p class="card-text"><small class="text-muted">Kolakakor är en gammal favorit!</small></p>
+                                        <hr>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+    
+    
+                <footer class="footer mt-auto py-3 bg-body-tertiary w-100">
+                    <div class="text-center p-3 d-flex flex-row justify-content-center">
+                        <span class="text-body-secondary">© 2025 Copyright:</span>
+                        <a class="text-body" href="index.html">DJ's Bageri</a>
+                        <span class="px-2"> | </span>
+                        <a class="text-body" href="./Pages/about.html">Om oss</a>
+                    </div>
+                </footer>
+                
             </div>
-          </footer>
+        </div>
+    </div>
+    
 
-</div>
 
-
-
+    <script src="./JS/cart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
