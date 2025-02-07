@@ -33,32 +33,43 @@ document.addEventListener("DOMContentLoaded", () => {
         if (list.children.length === 1 && list.children[0].textContent === "Är för tillfället tom.") {
             list.innerHTML = '';
         }
-        
-        
-        let numberOf = 1;
 
+        let numberOf = 1;
+        
+        
+        for (let item of list.children){
+            
+            if(item.querySelector(".fw-bold").textContent === itemName){
+                numberOf += Number(item.getAttribute('numberOf'));
+                item.setAttribute('numberOf', numberOf);
+                list.removeChild(item);
+            }
+        }
+        
+        
         let newListItem = document.createElement("li");
         newListItem.classList.add("w-100");
-
+        newListItem.setAttribute('numberOf', numberOf);
+        
         let titleRow = document.createElement("div");
         titleRow.classList.add("d-flex", "justify-content-between", "align-items-center", "w-100");
-
+        
         let priceRow = document.createElement("div");
         priceRow.classList.add("d-flex", "flex-row", "justify-content-between", "align-items-center", "w-50");
-
+        
         let nameSpan = document.createElement("span");
         nameSpan.textContent = itemName;
         nameSpan.classList.add("fw-bold", "text-wrap", "flex-grow-1");
-
+        
         let priceSpan = document.createElement("span");
         priceSpan.textContent = `${itemPrice} kr`;
         priceSpan.classList.add("text-muted", "d-block", "mt-1");
-
-
+        
+        
         let numberOfSpan = document.createElement("span");
         numberOfSpan.textContent = `${numberOf} st`;
         numberOfSpan.classList.add("text-muted", "d-block");
-
+        
         // let removeButton = document.createElement("button");
         // removeButton.textContent = "X";
         // removeButton.classList.add("btn", "btn-danger", "btn-sm", "ms-2");
@@ -72,6 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
         plusOneButton.classList.add("btn", "btn-outline-secondary", "btn-sm");
         plusOneButton.addEventListener("click", () => {
             numberOf++;
+            newListItem.setAttribute('numberOf', numberOf);
             numberOfSpan.textContent = `${numberOf} st`;
             TotalSum(itemPrice);
         });
@@ -82,6 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
         minusOneButton.addEventListener("click", () => {
             if (numberOf > 1) {
                 numberOf--;
+                newListItem.setAttribute('numberOf', numberOf);
                 numberOfSpan.textContent = `${numberOf} st`;
                 TotalSum(-itemPrice);
             } else {
