@@ -18,11 +18,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     for (let btn of buttons) {
         btn.addEventListener("click", (event) => {
-            AddItemToCart(event.target);
+            CreateCartItem(event.target);
         });
     }
 
-    function AddItemToCart(button) {
+    function CreateCartItem(button) {
         let card = button.closest(".card");  
         
         if (!card) return; 
