@@ -18,21 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     for (let btn of buttons) {
         btn.addEventListener("click", (event) => {
-
-            for (let item of list.children) {
-                let nameSpan = item.querySelector(".card-title");
-                let itemName = event.querySelector(".card-title").textContent;
-                let itemPrice = item.getAttribute("price");
-
-                if(nameSpan && nameSpan.textContent === itemName){
-                    numberOf++;
-                    let numberOfSpan = item.querySelector(".text-muted");
-                    numberOfSpan.textContent = `${numberOf} st`;
-                    TotalSum(itemPrice);
-                    return;
-                }
-            }
-            
             AddItemToCart(event.target);
         });
     }
