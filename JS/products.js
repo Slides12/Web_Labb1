@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
             description: "This is a longer card with supporting text below as a natural lead-in to additional content."
         },
         {
-            name: "Kolakaka",
+            name: "Kola kaka",
             price: 25,
             image: "https://img.koket.se/standard-mega/kolakakor.jpg.webp",
             description: "This is a longer card with supporting text below as a natural lead-in to additional content."

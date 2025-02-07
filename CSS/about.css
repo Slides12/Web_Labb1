@@ -9,3 +9,9 @@
 h1 {
     font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
+
+p {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
