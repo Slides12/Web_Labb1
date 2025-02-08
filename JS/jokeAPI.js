@@ -19,7 +19,7 @@ function FetchUselessFact() {
 
 
 function FetchDailyNasaImage() {
-    fetch("https://api.nasa.gov/planetary/apod?api_key=qYFjQ36ubRHbwTpa8VNlUV5A0xu5gjp6xLKEZlmC")
+    fetch("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY")
         .then(response => {
             if (!response.ok) throw new Error("Network response was not ok.");
             return response.json();
