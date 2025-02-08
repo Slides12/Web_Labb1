@@ -1,15 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    let cards = document.querySelectorAll(".card");
-
-    cards.forEach(card => {
-        let price = card.getAttribute("price"); 
-        let priceElement = card.querySelector(".price");
-        if (priceElement) {
-            priceElement.textContent = `Pris: ${price}`; 
-        }
-    });
-
     let list = document.getElementById("list");
     let buttons = document.getElementsByClassName("buyBtn");
     let sumText = document.getElementById("totalSum");
@@ -28,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!card) return; 
         
         let itemName = card.querySelector(".card-title").textContent;
-        let itemPrice = card.getAttribute("price") || 100;
+        let itemPrice = card.getAttribute("price") || 9999;
         
         if (list.children.length === 1 && list.children[0].textContent === "Är för tillfället tom.") {
             list.innerHTML = '';

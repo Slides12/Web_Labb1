@@ -52,8 +52,21 @@ document.addEventListener("DOMContentLoaded", () => {
             `;
             container.innerHTML += productHTML;
         });
+        
     }
 
 
     AddProducts();
+
+
+    let cards = document.querySelectorAll(".card");
+
+    cards.forEach(card => {
+        let price = card.getAttribute("price"); 
+        let priceElement = card.querySelector(".price");
+        if (priceElement) {
+            priceElement.textContent = `Pris: ${price}`; 
+        }
+    });
+    
 });
