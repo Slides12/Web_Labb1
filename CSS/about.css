@@ -10,3 +10,6 @@ h1 {
     font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 
+html {
+    overflow-y: scroll; 
+}
