@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <p>Här är information om ${itemName}. Lorem ipsum dolor sit amet...</p>
+                            <p>${itemName} är ett läckert bakverk som är gjort av:  Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
