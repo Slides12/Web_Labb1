@@ -128,6 +128,52 @@ document.addEventListener("DOMContentLoaded", () => {
     accordionItem.appendChild(accordionCollapse);
     accordion.appendChild(accordionItem);
 
+    // Model grejer
+    let modalBTN = document.createElement("button");
+    modalBTN.textContent = "i";
+    modalBTN.classList.add("fs-5");
+    modalBTN.classList.add("btn", "btn-dark","rounded-pill");
+
+    modalBTN.addEventListener("click", function() {
+
+        let currentModal = document.getElementById("exampleModalCenteredScrollable");
+        if (currentModal) {
+            currentModal.remove();
+        }
+
+
+        let modal = document.createElement("div");
+        modal.className = "modal fade";
+        modal.id = "exampleModalCenteredScrollable";
+        modal.tabIndex = "-1";
+        modal.setAttribute("aria-labelledby", "exampleModalCenteredScrollableTitle");
+        modal.setAttribute("aria-hidden", "true");
+        modal.role = "dialog";
+
+        modal.innerHTML = `
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5">${itemName}</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Här är information om ${itemName}. Lorem ipsum dolor sit amet...</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            document.body.appendChild(modal);
+            new bootstrap.Modal(modal).show();
+
+    });
+
+
+
     // bygg ihop allt
 
     titleRow.appendChild(nameSpan);
@@ -135,6 +181,7 @@ document.addEventListener("DOMContentLoaded", () => {
     priceRow.appendChild(minusOneButton);
     priceRow.appendChild(numberOfSpan);
     priceRow.appendChild(plusOneButton);
+    titleRow.appendChild(modalBTN);
     
     newListItem.appendChild(titleRow);
     newListItem.appendChild(priceRow);
@@ -152,18 +199,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    function SaveCart() {
-        let cartItems = [];
-        
-        for (let item of list.children) {
-            let itemName = item.querySelector(".fw-bold").textContent;
-            let itemPrice = item.querySelector(".text-muted").textContent.replace(" kr", "");
-            let numberOf = item.getAttribute("numberOf");
-    
-            cartItems.push({ name: itemName, price: itemPrice, quantity: numberOf });
-        }
-        
-        sessionStorage.setItem("cart", JSON.stringify(cartItems));
-    }
+   
     
 });
