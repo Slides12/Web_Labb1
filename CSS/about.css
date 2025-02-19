@@ -19,12 +19,11 @@ html {
     width: 600px;
     height: 450px;
     background-color: lightgray;
-    background-image: url('/Web_Labb1/Images/map.png');
+    background-image: url('Images/map.png');
     background-size: cover;
     position: relative;
     cursor: pointer;
 }
-
 
 
 
