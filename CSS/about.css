@@ -20,9 +20,9 @@ html {
     background-size: cover;
     position: relative;
     overflow: hidden;
-    width: 600px;  /* Set fixed width */
-    height: 600px; /* Set fixed height */
-    padding-top: 0; /* Remove padding-top */
+    width: 600px; 
+    height: 600px; 
+    padding-top: 0; 
 }
 #mymap iframe {
     position: absolute;
