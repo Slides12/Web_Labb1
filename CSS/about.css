@@ -15,18 +15,16 @@ html {
 }
 
 
-/* Styling for the map container */
 #mymap {
     width: 600px;
     height: 450px;
     background-color: lightgray;
-    background-image: url('/images/map.webp'); 
+    background-image: url('./images/map.webp'); 
     background-size: cover;
     position: relative;
     cursor: pointer;
 }
 
-/* Styling for the image */
 .map-image {
     width: 100%;
     height: 100%;
