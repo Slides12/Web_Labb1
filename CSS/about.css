@@ -19,7 +19,7 @@ html {
     width: 600px;
     height: 450px;
     background-color: lightgray;
-    background-image: url('/images/map.png');
+    background-image: url('/Images/map.png');
     background-size: cover;
     position: relative;
     cursor: pointer;
