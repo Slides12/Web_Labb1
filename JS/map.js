@@ -10,7 +10,7 @@ var mapListener = function() {
     frame.style.border = "0"; 
     frame.allowFullscreen = true;
     frame.loading = "lazy"; 
-    map.innerHTML = ""; // Clear the image on hover
+    map.innerHTML = "";
     map.appendChild(frame); 
     map.removeEventListener("mouseover", mapListener); 
 };
