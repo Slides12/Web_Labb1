@@ -46,7 +46,12 @@
                         <h2 class="pt-5 pb-2 text-center text-md-left">Nasa API Daily Image</h2>
                         <h4 id="nasa-title"></h4>
                         <p class="text-center text-md-left" id="nasa"></p>
-                        <img id="nasa-image" src="" alt="NASA Image" style="width: 100%; height: auto; object-fit: cover;" loading="lazy">
+                        <picture>
+                            <source id="nasa-image-webp" srcset="" type="image/webp">
+                            <source id="nasa-image-avif" srcset="" type="image/avif">
+                            <img id="nasa-image" src="" alt="NASA Image" style="width: 100%; height: auto; object-fit: cover;" loading="lazy">
+                        </picture>
+                        
                     </div>
                 </div>
             </div>

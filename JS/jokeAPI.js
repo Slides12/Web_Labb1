@@ -18,28 +18,26 @@ function FetchUselessFact() {
 }
 
 
-function FetchDailyNasaImage() {
-    fetch("https://api.nasa.gov/planetary/apod?api_key=qYFjQ36ubRHbwTpa8VNlUV5A0xu5gjp6xLKEZlmC")
-        .then(response => {
-            if (!response.ok) throw new Error("Network response was not ok.");
-            return response.json();
-        })
-        .then(data => {
-            const nasaExplanation = document.getElementById("nasa");
-            const nasaTitle = document.getElementById("nasa-title");
-            const nasaImage = document.getElementById("nasa-image");
+async function FetchDailyNasaImage() {
+    try {
+        const response = await fetch("https://api.nasa.gov/planetary/apod?api_key=qYFjQ36ubRHbwTpa8VNlUV5A0xu5gjp6xLKEZlmC");
+        if (!response.ok) throw new Error("Network response was not ok.");
 
-            if (nasaExplanation && nasaTitle && nasaImage) {
-                nasaExplanation.textContent = data.explanation;
-                nasaTitle.textContent = data.title;
+        const data = await response.json();
+        document.getElementById("nasa-title").textContent = data.title;
+        document.getElementById("nasa").textContent = data.explanation;
 
-                nasaImage.src = data.url;
-                nasaImage.alt = data.title;
-            } else {
-                console.error("Element(s) for NASA data not found.");
-            }
-        })
-        .catch(error => console.error("NASA API Error:", error));
+        const img = document.getElementById("nasa-image");
+        const webp = document.getElementById("nasa-image-webp");
+        const avif = document.getElementById("nasa-image-avif");
+
+        img.src = data.url;
+        webp.srcset = data.url.replace(".jpg", ".webp"); // Example conversion
+        avif.srcset = data.url.replace(".jpg", ".avif");
+    } catch (error) {
+        console.error("NASA API Error:", error);
+    }
 }
+
 
 
