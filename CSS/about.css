@@ -13,3 +13,23 @@ h1 {
 html {
     overflow-y: scroll; 
 }
+
+
+#mymap{
+    background: url(/Images/dingdong.webp); 
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    width: 600px;  /* Set fixed width */
+    height: 600px; /* Set fixed height */
+    padding-top: 0; /* Remove padding-top */
+}
+#mymap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    border: 0;
+}
+
