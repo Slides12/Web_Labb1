@@ -19,11 +19,12 @@ html {
     width: 600px;
     height: 450px;
     background-color: lightgray;
-    background-image: url(../images/map.webp); 
+    background-image: url('../images/map.webp');
     background-size: cover;
     position: relative;
     cursor: pointer;
 }
+
 
 .map-image {
     width: 100%;
