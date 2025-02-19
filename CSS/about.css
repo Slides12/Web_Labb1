@@ -16,6 +16,7 @@ html {
 
 
 #mymap{
+    background: url(/images/dingdong.webp);
     background-size: cover;
     position: relative;
     overflow: hidden;
