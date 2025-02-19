@@ -16,7 +16,6 @@ html {
 
 
 #mymap{
-    background: url("/Images/dingdong.webp"); 
     background-size: cover;
     position: relative;
     overflow: hidden;
@@ -33,10 +32,3 @@ html {
     border: 0;
 }
 
-#img, #iframe-map {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 600px;
-    width: 600px;
-}
