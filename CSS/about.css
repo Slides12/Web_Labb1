@@ -39,13 +39,4 @@ html {
     opacity: 1; 
 }
 
-html, body {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-footer.footer {
-    margin-top: auto;
-}
 
